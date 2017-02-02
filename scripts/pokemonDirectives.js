@@ -32,6 +32,6 @@ app.directive("searchpokemon", function() {
 
 app.directive('trRow', function () {
     return {
-        template: '<td width ="20%" ng-bind="pokemon.id"></td><td width ="40%" ng-bind="pokemon.ename"</td> <td width ="40%"><img ng-src="images/thm/{{pokemon.id}}{{pokemon.flatName}}.png" alt="{{pokemon.ename}}" /></td>'
+        template: '<td width ="20%" ng-bind="pokemon.id"></td><td width ="40%" ng-bind="pokemon.ename"</td> <td width ="40%"><img ng-src="images/thm/{{pokemon.id}}{{pokemon.ename}}.png" alt="{{pokemon.ename}}" /></td>'
     };
 });
