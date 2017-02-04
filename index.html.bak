@@ -52,7 +52,7 @@
               <li><a class='north' href="./resume/Rajasimhan.pdf" download="Rajasimhan.pdf" title="Download.pdf"><img src="images/icn-save.jpg" alt="Download the pdf version" /></a></li>
               <li><a class='north' href="javascript:window.print()" title="Print"><img src="images/icn-print.jpg" alt="" /></a></li>
              <!-- <li><a class='north' id="contact" href="contact/index.html" title="Contact Me"><img src="images/icn-contact.jpg" alt="" /></a></li>-->
-              <li><a class='north' href="blog.html" title="blog"><img src="images/blog.jpg" alt="" /></a></li>
+              <li><a class='north' href="#" title="blog"><img src="images/blog.jpg" alt="" /></a></li>
               <li><a class='north' href="https://sg.linkedin.com/in/rajasimhan-vijayaragavan-16048414" title="My Linkedin Profile"><img src="images/linkedin.png" alt="" /></a></li>
             </ul>
           </div>

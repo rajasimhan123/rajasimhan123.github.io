@@ -1,0 +1,28 @@
+start script in background
+nohup command-with-options &
+
+nohup <jobename> &
+
+Replace Perl script
+perl -pi -e 's/<source>/<destination>/g' *.sh
+
+
+remove crlM
+
+perl -pi -e 's/\r//g' *.sql
+
+create soft links
+
+ln -s <directory name> <link name>
+
+
+
+grep text from gz file 
+
+gunzip -c ibapp1a_Eonteclogs_20100930.tar.gz | grep "abc"
+
+
+
+
+
+
