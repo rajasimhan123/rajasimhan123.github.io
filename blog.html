@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Rajasimhan Blog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="images/SimpleBlog.css" type="text/css" />
+<script>
+function init(){
+var n =  new Date();
+var y = n.getFullYear();
+var m = n.getMonth() + 1;
+var d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+}
+</script>
+</head>
+<body onload="javascript:init();">
+<div id="wrap">
+  <div id="header">
+    <h1 id="logo">Raj <span class="gray">Blog</span></h1>
+    <h2 id="slogan">Yet to come ...</h2>
+    <div id="searchform">
+      <form method="post" class="search" action="#">
+        <p>
+          <input name="search_query" class="textbox" type="text" />
+          <input name="search" class="button" type="submit" value="search" />
+        </p>
+      </form>
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li id="current"><a href="#"><span>Home</span></a></li>
+      <li><a href="#"><span>Archives</span></a></li>
+      <li><a href="#"><span>Downloads</span></a></li>
+      <li><a href="#"><span>Services</span></a></li>
+      <li><a href="#"><span>Support</span></a></li>
+      <li><a href="resume.html"><span>About</span></a></li>
+    </ul>
+  </div>
+  <div id="content-wrap">
+    <div id="sidebar">
+      <h1>Tutorials</h1>
+      <ul class="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="usefultips.html">Quick Reference</a></li>
+        <li><a href="books/java.pdf">JAVA / J2EE Interview preparation</a></li>
+		<li><a href="#SampleTags">Java</a></li>
+        <li><a href="#">Spring</a></li>
+        <li><a href="#">AngularJS</a></li>
+		</ul>
+      <h1>Useful Tips</h1>
+      <ul class="sidemenu">
+        <li><a href="#"></a></li>
+        <li><a href="#">4templates</a></li>
+        <li><a href="#">TemplateMonster</a></li>
+        <li><a href="#">Fotolia.com</a></li>
+        <li><a href="#">Text Link Ads</a></li>
+      </ul>
+      <h1>Wise Words</h1>
+      <p>&quot;Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.&quot; </p>
+      <p class="align-right">- William James</p>
+      <h1>Support Styleshout</h1>
+      <p>If you are interested in supporting my work and would like to contribute, you are welcome to make a small donation through the donate link on my website - it will be a great help and will surely be appreciated.</p>
+    </div>
+    <div id="main"> <a name="TemplateInfo"></a>
+      <h1>Info</h1>
+      <p>To busy with office work ... Dont have time to update my blog</p>
+      <p class="post-footer align-right"> <a href="#" class="readmore">Read more</a> <a href="#" class="comments">Comments (7)</a> <span id="date" class="date"></span> </p>
+      <a name="SampleTags"></a>
+      <h1>Sample Tags</h1>
+      <h3>Code</h3>
+      <p><code> code-sample { <br />
+        font-weight: bold;<br />
+        font-style: italic;<br />
+        } </code></p>
+      <h3>Example Lists</h3>
+      <ol>
+        <li>example of</li>
+        <li>ordered list</li>
+      </ol>
+      <ul>
+        <li>example of</li>
+        <li>unordered list</li>
+      </ul>
+      <h3>Need to Update  on this section</h3>
+      <blockquote>
+        <p>temp text....</p>
+      </blockquote>
+      <h3>Heading</h3>
+      <p><a href="#"><img src="images/firefox-gray.jpg" width="100" height="120" alt="firefox" class="float-left" /></a>sample text </p>
+      <br />
+    </div>
+  </div>
+  <div id="footer">
+    <p> &copy; 2006 <strong>Your Company</strong> &nbsp;&nbsp; Design by: <a href="http://www.styleshout.com/">styleshout</a> | Valid: <a href="http://validator.w3.org/check/referer">XHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Home</a>&nbsp;|&nbsp; <a href="#">Sitemap</a>&nbsp;|&nbsp; <a href="#">Home</a> </p>
+  </div>
+</div>
+<div align=center>This template  downloaded form <a href='#'>free website templates</a></div></body>
+</html>
