@@ -35,7 +35,7 @@ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
       <li><a href="#"><span>Downloads</span></a></li>
       <li><a href="#"><span>Services</span></a></li>
       <li><a href="#"><span>Support</span></a></li>
-      <li><a href="#"><span>About</span></a></li>
+      <li><a href="resume.html"><span>About</span></a></li>
     </ul>
   </div>
   <div id="content-wrap">
@@ -51,11 +51,11 @@ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 		</ul>
       <h1>Useful Tips</h1>
       <ul class="sidemenu">
-        <li><a href="#"></a></li>
-        <li><a href="#">4templates</a></li>
-        <li><a href="#">TemplateMonster</a></li>
-        <li><a href="#">Fotolia.com</a></li>
-        <li><a href="#">Text Link Ads</a></li>
+        <li><a href="#">tips</a></li>
+        <li><a href="#">tip1</a></li>
+        <li><a href="#">tip2</a></li>
+        <li><a href="#">tip3</a></li>
+        <li><a href="#">tip4</a></li>
       </ul>
       <h1>Wise Words</h1>
       <p>&quot;Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.&quot; </p>
@@ -65,15 +65,49 @@ document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
     </div>
     <div id="main"> <a name="TemplateInfo"></a>
       <h1>Info</h1>
-      <p>To busy with office work ... Dont have time to update my blog</p>
+      <p> 
+Thanks to the one who made me to learn AngularJS and motivated me to create this blog.
+	  To busy with office work ... Dont have time to update my blog</p>
       <p class="post-footer align-right"> <a href="#" class="readmore">Read more</a> <a href="#" class="comments">Comments (7)</a> <span id="date" class="date"></span> </p>
       <a name="SampleTags"></a>
-      <h1>Sample Tags</h1>
+      <h1>AngularJS</h1>
       <h3>Code</h3>
-      <p><code> code-sample { <br />
-        font-weight: bold;<br />
-        font-style: italic;<br />
-        } </code></p>
+      <p><code>app.controller('mainController', function($scope, $http,pokeFactory,pokemonService) { <br>
+
+	//Fetching the pokemon details from json using factory method <br>
+	pokeFactory.fetchPokemonDetails().then(function(response){$scope.pokemons = response.data;});<br>
+	//Fetching the pokemon type <br>
+	pokeFactory.fetchPokemonTypes().then(function(response){$scope.types = response.data;});<br>
+	//Fetching the pokemon skills <br>
+	pokeFactory.fetchPokemonSkills().then(function(response){$scope.skills = response.data;});<br>
+	
+  
+  // Retrieving the specific Pokemon details <br>
+  $scope.open = function(pokemon){<br>
+      if ($scope.isOpen(pokemon)){<br>
+          $scope.opened = undefined;<br>
+      } else {<br>
+          $scope.openedPokemon = pokemon;<br>
+          $scope.skill = pokemonService.selectVal($scope.skills,pokemon.id,'id');<br>
+          $scope.type = pokemonService.selectVal($scope.skills,$scope.skill.type,'cname');<br>
+      }        <br>
+  };<br>
+  
+  $scope.isOpen = function(pokemon){<br>
+      return $scope.openedPokemon === pokemon;<br>
+  };<br>
+  
+  $scope.anyPokemonOpen = function() {<br>
+      return $scope.openedPokemon !== undefined;<br>
+  };<br>
+  
+  $scope.close = function() {<br>
+      $scope.openedPokemon = undefined;<br>
+  };<br>
+ 
+});<br>
+
+ </code></p>
       <h3>Example Lists</h3>
       <ol>
         <li>example of</li>
