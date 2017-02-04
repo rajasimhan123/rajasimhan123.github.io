@@ -1,84 +1,211 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script src="scripts/angular.min.js"></script>
-<script src="scripts/pokemonApp.js"></script>
-<script src="scripts/pokemonDirectives.js"></script>
-<script src="scripts/pokemonServices.js"></script>
-<script src="scripts/pokemonFactory.js"></script>
-<script src="scripts/pokemonControllers.js"></script>
-<link rel="stylesheet" href="css/poke.css">
-<title>Pokemon Assignment</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Resume</title>
+<link type="text/css" rel="stylesheet" href="css/blue.css" />
+<link type="text/css" rel="stylesheet" href="css/print.css" media="print"/>
+<!--[if IE 7]>
+<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/cufon.yui.js"></script>
+<script type="text/javascript" src="js/scrollTo.js"></script>
+<script type="text/javascript" src="js/myriad.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+		Cufon.replace('h1,h2');
+</script>
 </head>
-<body ng-app="pokemonModule" ng-controller="mainController">
-	<div class="content">
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <div class="wrapper-top"></div>
+  <div class="wrapper-mid">
+    <!-- Begin Paper -->
+    <div id="paper">
+      <div class="paper-top"></div>
+      <div id="paper-mid">
+        <div class="entry">
+          <!-- Begin Image -->
+          <img class="portrait" src="images/rajasimhan.jpg" alt="Rajasimhan Vijayaragavan" />
+          <!-- End Image -->
+          <!-- Begin Personal Information -->
+          <div class="self">
+            <h1 class="name">Rajasimhan <br />
+              <span>Senior IT Consultant</span></h1>
+            <ul>
+              <li class="mail">rajasimhanv@gmail.com</li>
+              <li class="tel">+65 94515277</li>
+              <li class="web">www.rajasimhan123.github.io</li>
+            </ul>
+          </div>
+          <!-- End Personal Information -->
+          <!-- Begin Social -->
+          <div class="social">
+            <ul>
+              <li><a class='north' href="./resume/Rajasimhan.pdf" download="Rajasimhan.pdf" title="Download.pdf"><img src="images/icn-save.jpg" alt="Download the pdf version" /></a></li>
+              <li><a class='north' href="javascript:window.print()" title="Print"><img src="images/icn-print.jpg" alt="" /></a></li>
+              <li><a class='north' id="contact" href="contact/index.html" title="Contact Me"><img src="images/icn-contact.jpg" alt="" /></a></li>
+              <li><a class='north' href="#" title="blog"><img src="images/blog.jpg" alt="" /></a></li>
+              <li><a class='north' href="#" title="My Facebook Profile"><img src="images/linkedin.png" alt="" /></a></li>
+            </ul>
+          </div>
+          <!-- End Social -->
+        </div>
+        <!-- Begin 1st Row -->
+        <div class="entry">
+          <h2>Professional Summary</h2>
+          <p>Having 12+ years of experience in Technology Delivery, Consultation, and Application Architecture.<br>Strong Experience in Design and Development of applications in <strong>J2EE Technologies</strong>. 
+			<br>Extensive experience in developing <strong>Internet / Mobile  Banking</strong> applications.
+			<br>Experience in <strong>Banking</strong> and <strong>E-Learning</strong> verticals.
+			<br>Certified Scrum Master (<strong>PSM I</strong>).
+			<br>Full stack developer with excellent communication &amp; interpersonal skills and served clients from different geographies
+			<br>Having onsite work experience in USA and Indonesia.
+		  </p>
 
-		<!-- Below directive is responsible for rendering the Pokemon search -->
-		<searchpokemon></searchpokemon>
-		<br>
-		<br>
+        </div>
+        <!-- End 1st Row -->
 
 
-		<!--  Pokemon display List starts here -->
-		<table width="500">
-			<thead>
-				<tr>
-					<th><a href="#"
-						ng-click="orderByColumn='id'; reverseSort = !reverseSort"> Id</a></th>
-					<th><a href="#"
-						ng-click="orderByColumn='ename'; reverseSort = !reverseSort">Name</a></th>
-					<th>Image</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr tr-row ng-click="open(pokemon)"
-					ng-repeat="pokemon in pokemons | orderBy:orderByColumn:reverseSort | filter : searchText"
-					ng-controller="ItemController"></tr>
-			</tbody>
-		</table>
-		<!--  Pokemon display List ends here -->
+		<!-- Begin 4th Row -->
+        <div class="entry">
+          <h2>SKILLS</h2>
+
+		 <div class="content">
+            <h3>Technologies / Frameworks</h3>
+            <ul class="skills">
+			 <li>Java/J2EE</li>
+              <li>AJAX,MQ,XML</li>
+              <li>Eontec</li>
+              <li>Mobeix</li>
+              <li>Kony</li>
+              <li>Spring Boot</li>
+              <li>Open JPA</li>
+              <li>Spring MVC</li>
+			 <li>Hibernate </li>
+			 <li>Jasper Reports</li>
+			 <li>AngularJS</li>
+            </ul>
+          </div>
+		 <div class="content">
+            <h3>Relational Databases</h3>
+            <ul class="skills">
+              <li>Oracle</li>
+              <li>MySQL</li>
+              <li>DB2</li>
+             </ul>
+          </div>
+        
+
+		 <div class="content">
+            <h3>Application/Web Servers </h3>
+            <ul class="skills">
+              <li>WebSphere</li>
+              <li>JBoss</li>
+              <li>Jakarta-Tomcat-4.x</li>
+              <li>Apache</li>
+            </ul>
+          </div>
+        
+
+          <div class="content">
+            <h3>Tools</h3>
+            <ul class="skills">
+              <li>CVS</li>
+              <li>SVN</li>
+              <li>Clear Case</li>
+              <li>Ant</li>
+              <li>JUnit </li>
+              <li>iReport</li>
+			  <li>JMeter</li>
+            </ul>
+          </div>
+        </div>
 
 
-		<!--pokemon detail page starts here -->
-		<ng-switch on="anyPokemonOpen()">
-		<div ng-switch-when="true" ng-controller="ItemController">
 
-			<div class="single-pokemon page visible">
-				<div class="overlay"></div>
-				<div class="preview-large">
-					<!-- Pokeman Details Page Heading ie Name , Id and Image  -->
-					<center>
-						<h3>
-							{{openedPokemon.ename}} - #{{openedPokemon.id}}<img
-								class="smallimage"
-								ng-src="images/spr/{{openedPokemon.id}}MS.png">
-						</h3>
-					</center>
-					<img class="bigimage"
-						ng-src="images/img/{{openedPokemon.id}}{{openedPokemon.ename}}.png">
-					<table width="100%">
+        <!-- End 4th Row -->
+        
+ <!-- Begin 2nd Row -->
+        <div class="entry">
+          <h2>EDUCATION</h2>
+          <div class="content">
+            
+            <p>Bachelor of Engineering [Information Technology]. <br />
+              <em>Information Technology</em></p>
+          </div>
+         
+        <!-- End 2nd Row -->
+        <!-- Begin 3rd Row -->
+        <div class="entry">
+          <h2>EXPERIENCE</h2>
+          <div class="content">
+            <h3>Dec 2011 - Till date</h3>
+            <p>DBS (through IBM), Singapore <br />
+              <em>Senior IT Consultant</em></p>
+            <ul class="info">
+              <li>Worked on various enhancements on DBS Singapore Internet banking application.</li>
+			  <li>SG Internet Banking provides online banking facilities which include Account Summary, Transaction History, Fund Transfer, Bill Payment, and Investment Services for the internet banking customers.</li>
+			   <li>Involved in SOW ,Resource Management, Architecture, Design, Development and Technology Analysis for various services in Internet Banking .</li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3>May 2010 - Dec 2011</h3>
+            <p>Tagit Pte Ltd,Singapore <br />
+            <em>Senior System Analyst</em></p>
+            <ul class="info">
+              <li>CommonWealth Mobile Banking Phase I has most of the features of Internet Banking. Main features like Account Information, Fund Transfer, and Investment etc.  </li>
+              <li>I have involved in mentoring the whole team and involved in development of fund transfer module. Participated in all client status meeting.</li>
+            </ul>
+          </div>
 
-						<!-- All details in the Pokemon  -->
-						<tr ng-repeat="(key, value) in openedPokemon.base">
-							<td>{{ key | uppercase }}</td>
-							<td>{{ value }}</td>
-						</tr>
-						<!-- All Pokemon Skill details -->
-						<tr ng-repeat="(key, value) in skill">
-							<td>{{ key | uppercase}}</td>
-							<td>{{ value }}</td>
-						</tr>
-						<tr>
-							<td>ENAME</td>
-							<td>{{type.ename}}</td>
-						</tr>
-					</table>
-					<!-- Close functionality for  preview page-->
-					<span ng-click="close()" class="close">X</span>
-				</div>
+		<div class="content">
+            <h3>August 2009 - March 2010</h3>
+            <p>NIIT Ltd, India <br />
+              <em>Project Lead</em></p>
+            <ul class="info">
+              <li>Knowledge Portal is the web catalog which displays the Course List for which the User has subscribed .The objective of this project is to create a Single Knowledge Portal.The other objective is to create an Element K- Portals brand that will be used to enable the Knowledge Portal navigation.Knowledge Portals must be brandable and the overall design should be as brand-neutral as possible and look to re-use existing styles where applicable. 
+		</li>
+        </ul>
+          </div>
+		  <div class="content">
+            <h3>March 2005 to July 2009</h3>
+            <p>Element K (Now Skillsoft), India <br />
+              <em>Senior Software Engineer</em></p>
+            <ul class="info">
+              <li>KHUB is Elearning product.Invaolved in various enhancement in the product. The objective of this project is to create a Single Knowledge Portal. The other objective is to create an Element K- Portals brand that will be used to enable the Knowledge Portal navigation.Knowledge Portals must be brandable and the overall design should be as brand-neutral as possible and look to re-use existing styles where applicable. 
+			</li>
+              
+            </ul>
+          </div>
 
-			</div>
-		</ng-switch>
-	</div>
+        </div>
+
+
+
+
+
+
+
+        <!-- End 3rd Row -->
+       
+
+		
+      </div>
+      <div class="clear"></div>
+      <div class="paper-bottom"></div>
+    </div>
+    <!-- End Paper -->
+  </div>
+  <div class="wrapper-bottom"></div>
+</div>
+<div id="message"><a href="#top" id="top-link">Go to Top</a></div>
+<!-- End Wrapper -->
 </body>
 </html>
